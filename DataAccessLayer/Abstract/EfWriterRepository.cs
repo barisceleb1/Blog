@@ -1,4 +1,5 @@
-﻿using EntityLayer.Concrete;
+﻿using DataAccessLayer.Repositories;
+using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-    public interface ICategoryDal:IGenericDal<Category>
+    public class EfWriterRepository : GenericRepository<Writer>, IWriterDal
     {
 
     }
